@@ -5,9 +5,9 @@ class Author {
     }
 
     createPost(title, content) {
-        const publicacao= new Post(title, content, this)
-        this.posts.push(publicacao)
-        return post
+        const publi= new Post(title, content, this)
+        this.posts.push(publi)
+        return publi
     }
 }
 
