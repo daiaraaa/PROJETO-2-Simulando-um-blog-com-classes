@@ -8,6 +8,7 @@ class Post {
 
     addComment(comment) {
         this.comments.push(comment)
+        return this.comments
     }
 }
 
