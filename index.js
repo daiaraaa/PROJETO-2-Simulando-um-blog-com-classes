@@ -1,16 +1,11 @@
 const Author = require('./Author')
-const Comment = require('./Comment')
-const Post = require('./Post')
 
-const autor1 = new Author('Rick Riordan')
-const public= new Post ('ivro: Percy Jackson e os Olimpianos')
-const user1 = new Author('Walker')
-const commet1= new Comment('ESTOU MUITO ANIMADO!')
-const user2= new Author('Leah')
-const comment2= new Comment('ESTOU MUITO ENTUSIASMADA!')
-console.log(autor1)
-console.log(public)
-console.log(user1)
-console.log(commet1)
-console.log(user2)
-console.log(comment2)
+const rick = new Author('Rick Riordan')
+
+const post = rick.createPost('Percy Jackson e os Olimpianos', 'Livro')
+
+post.addComments('Walker', 'Estou muito animado!')
+post.addComments('Leah', 'Estou muitos ansiosa!')
+
+console.log(rick)
+console.log(post)
