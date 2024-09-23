@@ -1,3 +1,4 @@
+const Post = require('./Comment')
 class Post {
   constructor(title, content, author) {
     this.title = title
